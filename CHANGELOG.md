@@ -21,6 +21,7 @@ Change categories:
 
 - utils: Introduce `pldm_edac_crc32()`
 - utils: Introduce `pldm_edac_crc8()`
+- state-set: Added the enum pldm_state_set_presence_values
 
 ### Changed
 
@@ -42,7 +43,6 @@ Change categories:
 - requester: Remove related deprecated APIs
 
   Remove all of:
-
   - `pldm_close()`
   - `pldm_open()`
   - `pldm_recv()`
@@ -89,7 +89,6 @@ Change categories:
 
 - Returned error values for the following stable APIs have changed their
   semantics:
-
   - `decode_descriptor_type_length_value()`
   - `decode_event_message_buffer_size_resp()`
   - `decode_get_numeric_effecter_value_resp()`
@@ -105,7 +104,6 @@ Change categories:
   association PDR creation
 
 - Register allocation changed for the following APIs:
-
   - `encode_get_downstream_firmware_parameters_req()`
 
 ### Deprecated
